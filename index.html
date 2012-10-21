@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>image2css converter</title>
+    <style>
+      /*<![CDATA[*/
+        #view {
+          width: 0;
+          height: 0;
+        }
+      /*]]>*/
+    </style>
+    <script src="//code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="./img2css.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>img2css</h1>
+    <div>
+      <input id="file" name="file" type="file">
+    </div>
+    <div>
+      <input id="convert" name="convert" type="button" value="convert">
+    </div>
+    <h2>original</h2>
+    <canvas id="canvas"></canvas>
+    <h2>css</h2>
+    <div id="view"></div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+!!!
+%html
+  %head
+    %meta(charset="UTF-8")
+    %title image2css converter
+    :css
+      #view {
+        width: 0;
+        height: 0;
+      }
+    %script(type="text/javascript" src="//code.jquery.com/jquery.min.js")
+    %script(type="text/javascript" src="./img2css.js")
+  %body
+    %h1 img2css
+
+    %div
+      %input(type="file" name="file" id="file")
+    %div
+      %input(type="button" name="convert" id="convert" value="convert")
+
+    %h2 canvas
+    %canvas(id="canvas")
+
+    %h2 css
+    #view
